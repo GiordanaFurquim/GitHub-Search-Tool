@@ -1,0 +1,72 @@
+body {
+    background-color: #5f6769;
+}
+
+#main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 45px;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+input {
+    font-family: 'Rubik', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    border: solid lightgrey;
+    width: 25%;
+}
+
+button {
+    font-family: 'Rubik', sans-serif;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: white;
+    width: 100px;
+    border: lightgrey solid;
+}
+
+button:hover {
+    border: solid 5px;
+}
+
+img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.results {
+margin-top: 30px;
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: whitesmoke;
+}
+
+.commits-results {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    background-color: whitesmoke;
+    height: 100%
+    width:100%;
+}
+
+li {
+    margin: 5px;
+}

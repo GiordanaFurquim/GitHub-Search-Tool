@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+        <title>GitHub Search Tool</title>
+    </head>
+    <body>
+        <h1>GitHub Search Tool</h1>
+        <h2> Please, enter your credetials and the username you're surching for </h2>
+    <div id="main-container">
+        <input type="text" name="username" placeholder="username" autocomplete="off">
+        <input type="password" name="password" placeholder="password" autocomplete="off">
+        <input type="text" name="user-to-go" placeholder="search" autocomplete="off">
+        <button id="go-button">GO</button>
+    </div>
+
+        <div id="results-container"></div>
+        <script id="repos" type="text/x-handlebars-template">
+            {{#repos}}
+            <div class="results">
+                <img src="{{owner.avatar_url}}">
+                {{full_name}}
+            </div>
+            {{/repos}}
+        </script>
+
+        <div id="commits-container"></div>
+
+        <script id="commits" type="text/x-handlebars-template">
+            {{#commits}}
+            <div class="commits-results">
+
+                    <li>{{commit.message}}</li>
+
+            </div>
+            {{/commits}}
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
